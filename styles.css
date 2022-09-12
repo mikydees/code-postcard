@@ -1,11 +1,5 @@
-.post {
-	display: flex;
-
+body {
 	background: black;
-}
-* {
-	border: 1px dashed red;
-	min-height: 10px;
 }
 p {
 	color: blue;
@@ -16,6 +10,7 @@ p {
 	width: 400px;
 	height: 300px;
 	margin: auto;
+	border: 1px solid black;
 }
 .postcard-header {
 	display: flex;
@@ -31,8 +26,8 @@ p {
 .postcard-body {
 	display: flex;
 }
-.body-left p:first-child {
-	margin-top: none;
+.body-left p {
+	margin-top: 0;
 }
 .body-left,
 .body-right {
@@ -41,4 +36,13 @@ p {
 input {
 	border: none;
 	border-bottom: none;
+}
+input {
+	border-bottom: 1px solid black;
+}
+button {
+	margin: auto;
+}
+.postcard-footer {
+	text-align: center;
 }
